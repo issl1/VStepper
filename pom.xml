@@ -55,6 +55,10 @@
 					<artifactId>*</artifactId>
 				</exclusion>
 				<exclusion>
+					<groupId>org.webjars.npm</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+				<exclusion>
 					<groupId>org.webjars.bowergithub.insites</groupId>
 					<artifactId>*</artifactId>
 				</exclusion>
