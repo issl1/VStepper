@@ -102,8 +102,12 @@ public class VStepper extends PolymerTemplate<TemplateModel> implements HasSize,
 
     next.addClickListener(click -> showNextStep());
     back.addClickListener(click -> showPreviousStep());
-    finish.addClickListener(click -> currentStep.complete());
-
+    //finish.addClickListener(click -> currentStep.complete());
+    finish.addClickListener(click -> {
+			if (currentStep.isValid()) {
+				currentStep.complete();
+			}
+		}); 
     back.setVisible(false);
     finish.setVisible(false);
     setCancelVisible(false);
