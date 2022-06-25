@@ -144,10 +144,10 @@ public class VStepper extends PolymerTemplate<TemplateModel> implements HasSize,
   }
 
   private void updateButtonEnabledState() {
-    if (validationMode == ValidationMode.ON_CHANGE) {
+   //if (validationMode == ValidationMode.ON_CHANGE) {
       next.setEnabled(currentStep.isValid());
       finish.setEnabled(currentStep.isValid());
-    }
+    //}
   }
 
   private Step getNextStep(Step step) {
